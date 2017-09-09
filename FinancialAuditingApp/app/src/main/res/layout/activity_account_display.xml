@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.financialauditingapp.Desk.AccountsDisplay.AccountDisplayActivity">
+
+    <RadioGroup
+        android:id="@+id/rgTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="11"
+        >
+
+        <ImageView
+            android:id="@+id/iVTopBack"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:src="@drawable/ic_back"
+            android:background="@color/colorPrimary"/>
+
+        <RadioButton
+            android:id="@+id/rbTopLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Pending Review"
+            />
+
+        <RadioButton
+            android:id="@+id/rbTopCenter"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="Audit Failed"
+            android:button="@null" />
+
+        <RadioButton
+            android:id="@+id/rbTopRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Audit Passed" />
+
+        <ImageView
+            android:id="@+id/iVSearch"
+            android:layout_width="0dp"
+            android:layout_height="32dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:src="@drawable/ic_search" />
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rgBottom"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="8">
+
+
+        <RadioButton
+            android:id="@+id/rbBottomLeft"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Negative Margin" />
+
+        <RadioButton
+            android:id="@+id/rbBottomRight"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:button="@null"
+            android:gravity="center"
+            android:text="Positive Margin" />
+
+
+    </RadioGroup>
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--android:id="@+id/accountsDisplayRefresh"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/accountsDisplay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+
+
+    <!--<com.example.administrator.financialauditingapp.accounts.AccountsDisplay.AccountsDisplayRowTop-->
+        <!--android:id="@+id/adrTop"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+    <!--<com.example.administrator.financialauditingapp.accounts.AccountsDisplay.AccountsDisplayRowBottom-->
+        <!--android:id="@+id/adrBottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"/>-->
+
+</LinearLayout>

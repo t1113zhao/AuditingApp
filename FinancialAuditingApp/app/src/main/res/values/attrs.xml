@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DeskTextView">
+        <attr name="textTop" format="string"/>
+        <attr name="textBottom" format="string"/>
+
+        <attr name="textTopColor" format="color" />
+        <attr name="textBottomColor" format="color" />
+
+        <attr name="textTopSize" format="dimension" />
+        <attr name="textBottomSize" format="dimension"/>
+
+    </declare-styleable>
+</resources>

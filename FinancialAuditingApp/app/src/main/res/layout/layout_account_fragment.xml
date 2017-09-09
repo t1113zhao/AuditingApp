@@ -1,0 +1,128 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical" android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+    <!--<HorizontalScrollView-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center"-->
+        <!--android:background="#FFFFFF"-->
+
+        <!--&gt;-->
+
+        <LinearLayout
+            android:layout_marginLeft="0dp"
+            android:layout_marginRight="0dp"
+            android:id="@+id/deskTextViewGallery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+            android:background="@color/colorAccent"
+        android:weightSum="4">
+
+
+            <com.example.administrator.financialauditingapp.Desk.DeskTextView
+                android:id="@+id/waitcountmore"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:textBottom="@string/waitcountmoreBottomText"
+                />
+
+            <com.example.administrator.financialauditingapp.Desk.DeskTextView
+                android:id="@+id/waitcountless"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:textBottom="@string/waitcountlessBottomText"
+                />
+
+            <com.example.administrator.financialauditingapp.Desk.DeskTextView
+                android:id="@+id/nocount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:textBottom="@string/nocountBottomText" />
+
+            <com.example.administrator.financialauditingapp.Desk.DeskTextView
+                android:id="@+id/yescount"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:textBottom="@string/yescountBottomText"
+                 />
+        </LinearLayout>
+
+    <!--</HorizontalScrollView>-->
+
+    <!--<android.support.v7.widget.RecyclerView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <!---->
+        <!---->
+    <!--</android.support.v7.widget.RecyclerView>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_gravity="center"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_desk_work" />
+
+        <TextView
+            android:id="@+id/dateTV"
+            android:layout_width="wrap_content"
+            android:layout_height="88dp"
+            android:layout_gravity="center"
+            android:gravity="center_vertical"
+            android:text="@string/date"
+            android:textSize="17dp" />
+    </LinearLayout>
+
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+
+        <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/hidable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/audit_refresh_icon" />
+
+            <TextView
+                android:id="@+id/test"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audit Menu" />
+        </LinearLayout>
+    </ScrollView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+</LinearLayout>
